@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="icon" href="/assets/icon/calculator.svg" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="background">
+      <input id="display" readonly>
+      <div class="btn-grid">
+
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('/')" id="oprt"><img src="/assets/icon/divide.svg" alt=""></button>
+
+
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('*')" id="oprt"><img src="/assets/icon/times.svg" alt=""></button>
+
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('-')" id="oprt"><img src="/assets/icon/minus.svg" alt=""></button>
+
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button onclick="calculate()" id="oprt"><img src="/assets/icon/equals.svg" alt=""></button>
+          <button onclick="appendToDisplay('+')" id="oprt"><img src="/assets/icon/plus.svg" alt=""></button>
+          <label for="title" id="title">Calculator</label>
+          <button onclick="clearDisplay()" id="oprt"><img src="/assets/icon/backspace.svg" alt=""></button>
+      </div>
+  </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
